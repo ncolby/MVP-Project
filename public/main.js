@@ -11,6 +11,7 @@ async function getData() {
 function showDataHtml(data) {
     let div1 = document.createElement('div')
     div1.textContent = data
+    document.body.appendChild(div1)
     console.log(div1)
 }
 // $.get('/api', (data) => {
