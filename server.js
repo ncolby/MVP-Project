@@ -9,10 +9,10 @@ const db = require('./db/db_config')
 
 app.use(express.static('public'))
 
-app.get('/api', async (req, res) => {
-    await db.query('SELECT * FROM todo', (err, data) => {
-        console.log('this is my data', data)
-        res.json(data.rows[0]);
+app.get('/api', (req, res) => {
+        db.query('SELECT * FROM todo', (err, data) => {
+        // console.log('this is my data', data)
+        res.json(data.rows);
     })
 })
 
