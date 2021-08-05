@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+
+
+
+
+
+.container {
+    /* border: 1px solid black; */
+    color: rgb(16, 19, 233);
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Palette Mosaic', cursive;
+    color: rgb(184, 12, 175)
+}
+
+#idea {
+    text-align: center;
+    color: rgb(96, 245, 66)
+}
+
+.div_task {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.div_completed {
+        padding: 1rem;
+        cursor: pointer;
+        text-decoration: line-through;
+}
+
+.div_task:hover {
+    opacity: .7;
+    color: rgb (10, 10, 190);
+}
